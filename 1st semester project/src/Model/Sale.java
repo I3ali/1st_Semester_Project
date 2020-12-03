@@ -10,5 +10,5 @@ public class Sale {
     private LocalDateTime dueTime;
     private String department;
     private String haha;
-    
+
 }
