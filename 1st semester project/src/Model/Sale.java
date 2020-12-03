@@ -9,7 +9,9 @@ public class Sale {
     private int price;
     private LocalDateTime dueTime;
     private String department;
-    private 
 
-    private
+    public Sale (int ID, String costumer, int price, LocalDateTime dueTime, String department) {
+        
+
+    }
 }
