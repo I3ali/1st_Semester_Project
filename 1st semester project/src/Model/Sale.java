@@ -9,7 +9,6 @@ public class Sale {
     private int price;
     private LocalDateTime dueTime;
     private String department;
-    private 
-
-    private
+    private String haha;
+    
 }
