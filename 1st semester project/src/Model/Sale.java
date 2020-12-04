@@ -7,16 +7,18 @@ public class Sale {
     private String costumer;
     private ArrayList<Integer> listOfProducts;
     private int price;
-    private LocalDateTime dueTime;
+    private LocalDateTime purchaseDate;
+    private LocalDateTime paymentDeadline;
     private String department;
 
-    public Sale (int ID, String costumer, int price, LocalDateTime dueTime, String department) {
+    public Sale (int ID, String costumer, int price, LocalDateTime purchaseDate, String department, LocalDateTime paymentDeadline) {
 
         this.costumer = costumer;
         this.price = price;
-        this.dueTime = dueTime;
+        this.purchaseDate = purchaseDate;
         this.department = department;
         listOfProducts = new ArrayList<>();
+        this.paymentDeadline = paymentDeadline;
 
     }
 
@@ -53,11 +55,11 @@ public class Sale {
     }
 
     public LocalDateTime getDueTime() {
-        return dueTime;
+        return purchaseDate;
     }
 
     public void setDueTime(LocalDateTime dueTime) {
-        this.dueTime = dueTime;
+        this.purchaseDate = purchaseDate;
     }
 
     public String getDepartment() {
@@ -66,5 +68,21 @@ public class Sale {
 
     public void setDepartment(String department) {
         this.department = department;
+    }
+
+    public LocalDateTime getPurchaseDate() {
+        return purchaseDate;
+    }
+
+    public void setPurchaseDate(LocalDateTime purchaseDate) {
+        this.purchaseDate = purchaseDate;
+    }
+
+    public LocalDateTime getPaymentDeadline() {
+        return paymentDeadline;
+    }
+
+    public void setPaymentDeadline(LocalDateTime paymentDeadline) {
+        this.paymentDeadline = paymentDeadline;
     }
 }
